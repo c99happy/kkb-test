@@ -1,0 +1,12 @@
+server:
+  port: 8887
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/c99happy/slc.git
+          timeout: 20
+          default-label: master
